@@ -54,3 +54,9 @@ test.html
 scripts/*.json
 scripts/.tmp*
 
+# mobile (expo / react native)
+.expo/
+mobile/.expo/
+mobile/dist/
+
+
