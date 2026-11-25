@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "VoiceGuard AI",
-    "slug": "voiceguard-ai",
+    "name": "Verivox AI",
+    "slug": "verivox-ai",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -10,15 +10,15 @@
     "primaryColor": "#477BFF",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.voiceguard.ai",
+      "bundleIdentifier": "com.verivox.ai",
       "infoPlist": {
-        "NSMicrophoneUsageDescription": "VoiceGuard AI requires microphone access to record and analyze audio for synthetic voice and deepfake scam detection.",
-        "NSCameraUsageDescription": "VoiceGuard AI requires camera access to capture and verify suspicious video and facial keyframes.",
-        "NSPhotoLibraryUsageDescription": "VoiceGuard AI requires photo and video library access to select media for deepfake verification."
+        "NSMicrophoneUsageDescription": "Verivox AI requires microphone access to record and analyze audio for synthetic voice and deepfake scam detection.",
+        "NSCameraUsageDescription": "Verivox AI requires camera access to capture and verify suspicious video and facial keyframes.",
+        "NSPhotoLibraryUsageDescription": "Verivox AI requires photo and video library access to select media for deepfake verification."
       }
     },
     "android": {
-      "package": "com.voiceguard.ai",
+      "package": "com.verivox.ai",
       "adaptiveIcon": {
         "backgroundColor": "#F8F7F4",
         "foregroundImage": "./assets/android-icon-foreground.png",

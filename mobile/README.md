@@ -1,4 +1,4 @@
-# VOICEGUARD AI — MOBILE APPLICATION
+# VERIVOX AI — MOBILE APPLICATION
 
 **Cross-Platform iOS & Android App**  
 **Framework:** React Native (Expo SDK 58 · React 19 · TypeScript)  
@@ -25,7 +25,7 @@
      - `112` (National Emergency & Police)
    - Step-by-step offline emergency playbooks for Digital Arrest & Kidnapping voice scams.
 5. **AI Safety Assistant (`AssistantScreen`)**
-   - Conversational assistant powered by VoiceGuard safety protocols.
+   - Conversational assistant powered by Verivox safety protocols.
    - Quick prompt chips, instant protocol retrieval, and conversation reset.
 6. **24-Question Awareness Assessment Quiz (`QuizScreen`)**
    - Complete 24-question assessment across all 4 categories.

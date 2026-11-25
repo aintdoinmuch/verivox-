@@ -1,4 +1,4 @@
-// VoiceGuard AI - Mobile API Client & Offline Fallback Engine
+// Verivox AI - Mobile API Client & Offline Fallback Engine
 
 import { Platform } from "react-native";
 import { ScamAnalysisResult, AudioDetectionResult, VideoDetectionResult, ChatMessage } from "../types";
@@ -145,7 +145,7 @@ export async function detectAudio(fileUri: string, fileName = "recording.wav"): 
 
   // Informative offline detection response
   return {
-    model_name: "VoiceGuard Neural Wav2Vec2 (Offline Mode)",
+    model_name: "Verivox Neural Wav2Vec2 (Offline Mode)",
     verdict: "SYNTHETIC_OR_MANIPULATED",
     confidence_percentage: 84.5,
     synthetic_probability: 0.845,
@@ -189,7 +189,7 @@ export async function detectVideo(videoUri: string): Promise<VideoDetectionResul
   }
 
   return {
-    model_name: "VoiceGuard Dual-Engine Vision Transformer (ViT)",
+    model_name: "Verivox Dual-Engine Vision Transformer (ViT)",
     verdict: "DEEPFAKE_OR_SYNTHETIC",
     confidence_percentage: 88.2,
     deepfake_probability: 0.882,

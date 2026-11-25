@@ -39,7 +39,7 @@ export const AboutScreen: React.FC = () => {
         const data = await res.json();
         Alert.alert(
           "Backend Online!",
-          `Service: ${data.service || "VoiceGuard ML"}\nAudio Model: ${data.audio_model_loaded ? "Loaded" : "Offline"}\nVideo Model: ${data.video_model_loaded ? "Loaded" : "Offline"}`
+          `Service: ${data.service || "Verivox ML"}\nAudio Model: ${data.audio_model_loaded ? "Loaded" : "Offline"}\nVideo Model: ${data.video_model_loaded ? "Loaded" : "Offline"}`
         );
       } else {
         Alert.alert("Connection Alert", `Server responded with status ${res.status}`);
@@ -70,7 +70,7 @@ export const AboutScreen: React.FC = () => {
         </View>
 
         <Text style={styles.devBio}>
-          Architected the VoiceGuard AI multimodal deepfake defense engine, integrating Wav2Vec2
+          Architected the Verivox AI multimodal deepfake defense engine, integrating Wav2Vec2
           acoustic analysis, Vision Transformer facial artifact verification, and Gemini social
           engineering detection.
         </Text>

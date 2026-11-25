@@ -86,7 +86,7 @@ const INITIAL_WELCOME_MESSAGE: ChatMessage = {
   timestamp: "Just now",
   source: "verified_knowledge_base",
   title: "Welcome to Your Digital Safety Companion",
-  content: `### Welcome to VoiceGuard AI Safety Companion
+  content: `### Welcome to Verivox AI Safety Companion
 
 I am your dedicated digital safety companion. I am engineered to assist you with recognizing deepfake voices, verifying suspicious emergency calls, protecting family members, and responding authoritatively to extortion or impersonation attempts.
 
@@ -377,7 +377,7 @@ export default function AssistantPage() {
               <div>
                 <div className="flex items-center gap-2">
                   <h3 className="font-display font-semibold text-base text-[#171719]">
-                    VoiceGuard Safety Companion
+                    Verivox Safety Companion
                   </h3>
                   <span className="flex h-2 w-2 relative">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />

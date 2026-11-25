@@ -15,7 +15,7 @@ export const Header: React.FC<HeaderProps> = ({ onSettingsPress }) => {
           <Ionicons name="shield-checkmark" size={18} color="#FFFFFF" />
         </View>
         <View>
-          <Text style={styles.brandTitle}>VOICEGUARD<Text style={styles.brandAccent}>.AI</Text></Text>
+          <Text style={styles.brandTitle}>VERIVOX<Text style={styles.brandAccent}>.AI</Text></Text>
           <Text style={styles.brandSub}>DEEPFAKE DEFENSE & CALL SHIELD</Text>
         </View>
       </View>

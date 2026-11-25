@@ -9,7 +9,7 @@ export const NAV_ITEMS: NavItem[] = [
   {
     name: "Home",
     href: "/",
-    description: "VoiceGuard AI Overview & Threat Center",
+    description: "Verivox AI Overview & Threat Center",
   },
   {
     name: "Explore",
@@ -49,8 +49,8 @@ export const NAV_ITEMS: NavItem[] = [
 
 export const PROJECT_INFO = {
   name: "VERIVOX AI",
-  brandName: "VoiceGuard AI",
-  fullBrand: "VERIVOX AI · VoiceGuard",
+  brandName: "Verivox AI",
+  fullBrand: "VERIVOX AI",
   tagline: "Understanding, Detecting and Preventing Deepfake and Voice-Cloning Scams",
   subtitle:
     "An academic cybersecurity initiative engineered to demystify generative voice synthesis, detect social engineering exploitation, and empower proactive human defense.",
@@ -58,7 +58,7 @@ export const PROJECT_INFO = {
   institution: "JECRC University, Jaipur · Department of Computer Science & Cybersecurity",
   academicYear: "2025–2026",
   disclaimer:
-    "VoiceGuard AI / VERIVOX AI is an academic research and defense education initiative. Threat detection scores and voice-cloning assessments are probabilistic neural heuristics engineered for public awareness and triage assistance, not legally binding certifications.",
+    "Verivox AI is an academic research and defense education initiative. Threat detection scores and voice-cloning assessments are probabilistic neural heuristics engineered for public awareness and triage assistance, not legally binding certifications.",
 };
 
 export const EMERGENCY_CONTACTS = [

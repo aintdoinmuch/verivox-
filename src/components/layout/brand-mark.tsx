@@ -85,10 +85,10 @@ export function BrandMark({ className, showSubtitle = true }: BrandMarkProps) {
       <div className="flex flex-col">
         <div className="flex items-center gap-1.5">
           <span className="font-display text-lg font-bold tracking-tight text-[#171719]">
-            {PROJECT_INFO.brandName}
+            {PROJECT_INFO.name}
           </span>
           <span className="rounded-full bg-[#171719] px-1.5 py-0.2 font-mono text-[9px] font-semibold text-[#F8F7F4] uppercase tracking-wider">
-            VERIVOX
+            DEFENSE
           </span>
         </div>
         {showSubtitle && (

@@ -11,7 +11,7 @@ export function Footer() {
       <div className="pointer-events-none absolute -bottom-32 -left-32 h-96 w-96 rounded-full bg-gradient-to-tr from-[#D9D9F7]/30 via-[#B9A8E8]/15 to-[#B9E8F2]/20 blur-3xl" />
 
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12 xl:px-16">
-        {/* Top Header: VoiceGuard AI Branding & Description */}
+        {/* Top Header: Verivox AI Branding & Description */}
         <div className="pb-16 border-b border-[#171719]/8">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
             <div className="max-w-xl">
@@ -158,7 +158,7 @@ export function Footer() {
         {/* Bottom Bar: Copyright & Security Note */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#A6A6AC]">
           <div className="flex items-center gap-2">
-            <span>© 2026 {PROJECT_INFO.fullBrand}. All rights reserved.</span>
+            <span>© 2026 {PROJECT_INFO.name}. All rights reserved.</span>
           </div>
 
           <div className="flex items-center gap-4 font-mono text-[11px]">

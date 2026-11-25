@@ -1,5 +1,5 @@
 """
-VoiceGuard AI — Pretrained Audio Deepfake Detector
+Verivox AI — Pretrained Audio Deepfake Detector
 Model: mo-thecreator/Deepfake-audio-detection
 License: Apache-2.0
 Benchmark: Modern AI Voice Clone Corpus (ElevenLabs, Bark, Tortoise, VITS, StyleTTS)

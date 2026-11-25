@@ -1,6 +1,6 @@
-# VoiceGuard AI — Python Multimodal Detection Microservice
+# Verivox AI — Python Multimodal Detection Microservice
 
-This microservice handles heavy deep learning inference for VoiceGuard AI:
+This microservice handles heavy deep learning inference for Verivox AI:
 1. **Audio Deepfake Detection:** Wav2Vec2-Base fine-tuned checkpoint (`mo-thecreator/Deepfake-audio-detection`).
 2. **Video Deepfake Detection:** Dual-Engine Vision Transformers (`dima806/deepfake_vs_real_image_detection` and `dima806/ai_vs_real_image_detection`) + 2D FFT Spectral Frequency Analysis.
 

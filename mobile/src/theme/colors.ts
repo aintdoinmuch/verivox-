@@ -1,4 +1,4 @@
-// VoiceGuard AI - Mobile Editorial Design Tokens
+// Verivox AI - Mobile Editorial Design Tokens
 
 export const Colors = {
   background: "#F8F7F4", // Soft Ivory

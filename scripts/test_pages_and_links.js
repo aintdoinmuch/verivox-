@@ -48,9 +48,9 @@ async function testAllPages() {
       // Check design system markers
       const hasIvory = html.includes("#F8F7F4") || html.includes("bg-[#F8F7F4]");
       const hasCharcoal = html.includes("#171719") || html.includes("text-[#171719]");
-      const hasVoiceGuard = html.includes("VoiceGuard");
+      const hasVerivox = html.includes("Verivox");
 
-      const passed = res.status === 200 && !!h1Text && hasIvory && hasCharcoal && hasVoiceGuard;
+      const passed = res.status === 200 && !!h1Text && hasIvory && hasCharcoal && hasVerivox;
 
       results.push({
         name: page.name,

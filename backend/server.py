@@ -1,5 +1,5 @@
 """
-VoiceGuard AI — Unified Multimodal Deepfake Detection Microservice
+Verivox AI — Unified Multimodal Deepfake Detection Microservice
 FastAPI Application serving:
 1. Audio Deepfake Detection (Wav2Vec2 Modern AI Voice Classifier)
 2. Video Deepfake Detection (Vision Transformer ViT-Base Face Manipulation Classifier)
@@ -44,7 +44,7 @@ class VideoAnalysisRequest(BaseModel):
 async def lifespan(app: FastAPI):
     global audio_detector, video_detector
     try:
-        print("[Server] Starting VoiceGuard AI Multimodal Microservice...")
+        print("[Server] Starting Verivox AI Multimodal Microservice...")
         audio_detector = AudioDeepfakeDetector()
         print("[Server] Audio Deepfake Model loaded successfully.")
 
@@ -54,11 +54,11 @@ async def lifespan(app: FastAPI):
         print(f"[Server] Failed to load detector models on startup: {e}")
         traceback.print_exc()
     yield
-    print("[Server] Shutting down VoiceGuard AI Multimodal Microservice.")
+    print("[Server] Shutting down Verivox AI Multimodal Microservice.")
 
 
 app = FastAPI(
-    title="VoiceGuard AI - Multimodal Deepfake Detection API",
+    title="Verivox AI - Multimodal Deepfake Detection API",
     description="Microservice providing real-time acoustic and visual neural media forensic triage",
     version="2.0.0",
     lifespan=lifespan,
@@ -77,7 +77,7 @@ app.add_middleware(
 def health_check():
     return {
         "status": "online",
-        "service": "VoiceGuard Multimodal Deepfake Detector",
+        "service": "Verivox Multimodal Deepfake Detector",
         "audio_model_loaded": audio_detector is not None,
         "video_model_loaded": video_detector is not None,
     }

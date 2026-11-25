@@ -1,4 +1,4 @@
-// VoiceGuard AI - Mobile Type Definitions
+// Verivox AI - Mobile Type Definitions
 
 export type ThreatLevel = "SAFE" | "SUSPICIOUS" | "CRITICAL_THREAT";
 

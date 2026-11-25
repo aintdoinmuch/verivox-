@@ -38,7 +38,7 @@ http.get("http://localhost:3000/about", (res) => {
       { name: "8. Project limitations", pattern: /Project Limitations/i },
       {
         name: "Educational prototype disclaimer: does not guarantee detection",
-        pattern: /VoiceGuard AI is an educational prototype and does not guarantee detection of synthetic audio or video/i,
+        pattern: /Verivox AI is an educational prototype and does not guarantee detection of synthetic audio or video/i,
       },
     ];
 

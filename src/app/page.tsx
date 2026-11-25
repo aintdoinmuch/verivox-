@@ -23,7 +23,7 @@ import { WaveformVisualizer } from "@/components/shared/waveform-visualizer";
 import { EditorialImage } from "@/components/shared/editorial-image";
 
 export const metadata = {
-  title: "VERIVOX AI · VoiceGuard | Voice-Cloning & Deepfake Defense",
+  title: "VERIVOX AI | Voice-Cloning & Deepfake Defense",
   description:
     "An academic cybersecurity initiative engineered to demystify generative voice synthesis, detect social engineering exploitation, and empower proactive human defense.",
 };
@@ -590,7 +590,7 @@ export default function HomePage() {
       </section>
 
       {/* =========================================================================
-          SECTION 5 — INTRODUCING VOICEGUARD AI
+          SECTION 5 — INTRODUCING VERIVOX AI
           Showcase: AI Scam Checker, AI Safety Assistant, Learning Centre, Quiz
           Elegant feature presentation with clear navigation
           ========================================================================= */}
@@ -599,7 +599,7 @@ export default function HomePage() {
           <div className="mb-16 sm:mb-20">
             <SectionHeading
               sectionIndex="( 05 )"
-              categoryTag="VOICEGUARD DEFENSE ENGINE"
+              categoryTag="VERIVOX DEFENSE ENGINE"
               title="Engineered to protect human trust."
               subtitle="Four comprehensive defense pillars."
               description="A multi-layered cybersecurity toolkit built to detect, triage, educate, and empower individuals against generative voice manipulation."

@@ -1,4 +1,4 @@
-// VoiceGuard AI - 24-Question Deepfake and Cybersecurity Awareness Assessment Bank
+// Verivox AI - 24-Question Deepfake and Cybersecurity Awareness Assessment Bank
 // Sourced verbatim from official specification. Do not remove, rewrite, shorten or replace.
 
 export type OptionKey = "A" | "B" | "C" | "D";

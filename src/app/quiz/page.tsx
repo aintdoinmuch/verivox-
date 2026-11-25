@@ -152,7 +152,7 @@ export default function QuizPage() {
           <div className="space-y-4">
             <SectionHeading
               sectionIndex="( 05 )"
-              categoryTag="VOICEGUARD AI AWARENESS ASSESSMENT"
+              categoryTag="VERIVOX AI AWARENESS ASSESSMENT"
               title="How Well Can You Spot a Deepfake Scam?"
               subtitle="Test your knowledge of AI impersonation, digital fraud and online safety."
               description="From cloned voices to manipulated videos, learn how to recognise modern digital threats and make safer decisions."

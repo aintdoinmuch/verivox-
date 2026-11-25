@@ -28,7 +28,7 @@ export const AssistantScreen: React.FC = () => {
       id: "initial",
       role: "assistant",
       content:
-        "Hello! I am your VoiceGuard AI Safety Assistant. Ask me how to identify deepfakes, verify urgent family calls, or counter social engineering scams.",
+        "Hello! I am your Verivox AI Safety Assistant. Ask me how to identify deepfakes, verify urgent family calls, or counter social engineering scams.",
       timestamp: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
     },
   ]);
@@ -136,7 +136,7 @@ export const AssistantScreen: React.FC = () => {
                   msg.role === "user" ? styles.userSenderLabel : styles.assistantSenderLabel,
                 ]}
               >
-                {msg.role === "user" ? "YOU" : "VOICEGUARD AI"}
+                {msg.role === "user" ? "YOU" : "VERIVOX AI"}
               </Text>
               <Text
                 style={[

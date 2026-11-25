@@ -8,7 +8,7 @@ interface ChatMessage {
   content: string;
 }
 
-// Authoritative security protocols from VoiceGuard Verified Knowledge Base
+// Authoritative security protocols from Verivox Verified Knowledge Base
 const VERIFIED_SAFETY_PROTOCOLS: Record<string, { title: string; response: string; tags: string[] }> = {
   voice_cloning: {
     title: "How Voice Cloning Technology Works & Potential Misuse",
@@ -158,7 +158,7 @@ export async function POST(req: NextRequest) {
       try {
         const ai = getGeminiClient();
 
-        const systemInstruction = `You are VoiceGuard AI's Digital Safety Companion—an authoritative, calm, and protective digital safety copilot.
+        const systemInstruction = `You are Verivox AI's Digital Safety Companion—an authoritative, calm, and protective digital safety copilot.
 Your mission is to help individuals and businesses protect themselves from synthetic voice cloning, video deepfakes, emergency extortion scams, and cyber fraud.
 Guidelines:
 1. Provide structured, defensive, and immediately actionable advice. Use clear markdown with headings, checklists, and bullet points.
@@ -264,7 +264,7 @@ Guidelines:
         tags: matchedProtocol.tags,
         note: apiKey
           ? undefined
-          : "Delivered via VoiceGuard Verified Knowledge Base (Gemini API key is not currently configured).",
+          : "Delivered via Verivox Verified Knowledge Base (Gemini API key is not currently configured).",
         timestamp: new Date().toISOString(),
       });
     }
@@ -272,7 +272,7 @@ Guidelines:
     // General Digital Safety Guidance for unspecified queries when Gemini is unconfigured
     const generalSafetyGuidance = `### Digital Safety Guidance
 
-Thank you for consulting the VoiceGuard Safety Companion.
+Thank you for consulting the Verivox Safety Companion.
 
 When evaluating an unexpected message, voice recording, or video call, remember the **Triple Verification Rule**:
 
@@ -289,7 +289,7 @@ When evaluating an unexpected message, voice recording, or video call, remember 
       source: "verified_knowledge_base",
       note: apiKey
         ? undefined
-        : "Delivered via VoiceGuard Verified Knowledge Base (Gemini API key is not currently configured).",
+        : "Delivered via Verivox Verified Knowledge Base (Gemini API key is not currently configured).",
       timestamp: new Date().toISOString(),
     });
   } catch (error: unknown) {

@@ -50,7 +50,7 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
           <div className="flex items-center gap-2">
             <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
             <span className="font-mono text-xs uppercase tracking-widest text-[#A6A6AC]">
-              VOICEGUARD NAVIGATION SYSTEM
+              VERIVOX NAVIGATION SYSTEM
             </span>
           </div>
 

@@ -71,7 +71,7 @@ export async function POST(req: NextRequest) {
 
       return NextResponse.json(
         {
-          error: "VoiceGuard neural audio detection microservice is currently unreachable.",
+          error: "Verivox neural audio detection microservice is currently unreachable.",
           status: "BACKEND_UNAVAILABLE",
           details:
             "The decoupled Python deepfake classifier service (port 8000) is offline or initializing. Start the service with 'python backend/server.py'.",

@@ -45,7 +45,7 @@ const DEFAULT_DEVELOPER: DeveloperProfile = {
   department: "Department of Computer Science & Cybersecurity",
   institution: "JECRC University, Jaipur",
   summary:
-    "Responsible for the complete end-to-end website development, multimodal AI detection architecture, conversational safety companion, and interactive defense systems across VoiceGuard AI.",
+    "Responsible for the complete end-to-end website development, multimodal AI detection architecture, conversational safety companion, and interactive defense systems across Verivox AI.",
 };
 
 export default function AboutProjectPage() {
@@ -58,9 +58,9 @@ export default function AboutProjectPage() {
   React.useEffect(() => {
     try {
       // Clear out obsolete 3-member team key if lingering from older sessions
-      localStorage.removeItem("voiceguard_team_details");
+      localStorage.removeItem("verivox_team_details");
 
-      const stored = localStorage.getItem("voiceguard_developer_profile");
+      const stored = localStorage.getItem("verivox_developer_profile");
       if (stored) {
         const parsed = JSON.parse(stored);
         if (parsed && parsed.name && parsed.regNo) {
@@ -82,11 +82,12 @@ export default function AboutProjectPage() {
 
   const handleSaveDev = (e: React.FormEvent) => {
     e.preventDefault();
+    if (!tempDev.name.trim() || !tempDev.regNo.trim()) return;
     setDeveloper({ ...tempDev });
     setIsEditingDev(false);
     setSavedSuccess(true);
     try {
-      localStorage.setItem("voiceguard_developer_profile", JSON.stringify(tempDev));
+      localStorage.setItem("verivox_developer_profile", JSON.stringify(tempDev));
     } catch {
       // Ignore
     }
@@ -98,7 +99,7 @@ export default function AboutProjectPage() {
     setTempDev(DEFAULT_DEVELOPER);
     setIsEditingDev(false);
     try {
-      localStorage.removeItem("voiceguard_developer_profile");
+      localStorage.removeItem("verivox_developer_profile");
     } catch {
       // Ignore
     }
@@ -202,11 +203,11 @@ export default function AboutProjectPage() {
 
         <div className="rounded-3xl bg-white p-8 sm:p-10 border border-[#171719]/8 shadow-editorial-card space-y-6">
           <p className="text-base sm:text-lg text-[#171719]/85 leading-relaxed">
-            <strong>VoiceGuard AI</strong> is an academic capstone initiative engineered to address the rapid commoditization of generative artificial intelligence and its malicious exploitation in cyber fraud. Modern deep generative models can now clone a human voice with high fidelity from a mere 3-second audio recording and generate photorealistic face-swapped video feeds in real time.
+            <strong>Verivox AI</strong> is an academic capstone initiative engineered to address the rapid commoditization of generative artificial intelligence and its malicious exploitation in cyber fraud. Modern deep generative models can now clone a human voice with high fidelity from a mere 3-second audio recording and generate photorealistic face-swapped video feeds in real time.
           </p>
 
           <p className="text-sm sm:text-base text-[#171719]/75 leading-relaxed">
-            The project bridges the gap between state-of-the-art academic media forensics and practical public defense. By combining pretrained acoustic deepfake classifiers (Wav2Vec2), dual-backbone vision transformers (ViT FaceForensics + GenAI Diffusion), conversational safety assistance, and an interactive 24-question awareness assessment, VoiceGuard AI provides a complete defense continuum against modern synthetic extortion and digital impersonation.
+            The project bridges the gap between state-of-the-art academic media forensics and practical public defense. By combining pretrained acoustic deepfake classifiers (Wav2Vec2), dual-backbone vision transformers (ViT FaceForensics + GenAI Diffusion), conversational safety assistance, and an interactive 24-question awareness assessment, Verivox AI provides a complete defense continuum against modern synthetic extortion and digital impersonation.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-[#171719]/8">
@@ -420,10 +421,10 @@ export default function AboutProjectPage() {
         <div className="rounded-3xl bg-white p-8 sm:p-12 border border-[#171719]/8 shadow-editorial-card space-y-8">
           <div className="max-w-3xl space-y-3">
             <h3 className="font-display text-2xl font-medium text-[#171719]">
-              The VoiceGuard AI Ecosystem Architecture
+              The Verivox AI Ecosystem Architecture
             </h3>
             <p className="text-sm sm:text-base text-[#171719]/75 leading-relaxed">
-              Rather than presenting a monolithic, opaque &ldquo;AI black-box&rdquo;, VoiceGuard AI provides an integrated four-part defense architecture that addresses every phase of a social engineering encounter:
+              Rather than presenting a monolithic, opaque &ldquo;AI black-box&rdquo;, Verivox AI provides an integrated four-part defense architecture that addresses every phase of a social engineering encounter:
             </p>
           </div>
 
@@ -974,7 +975,7 @@ export default function AboutProjectPage() {
 
         <div className="rounded-3xl bg-white p-8 sm:p-10 border border-[#171719]/8 shadow-editorial-card space-y-6">
           <p className="text-sm sm:text-base text-[#171719]/80 leading-relaxed">
-            In accordance with rigorous academic integrity standards, the detection and forensic capabilities of VoiceGuard AI are bounded by several technical constraints inherent to state-of-the-art media classifiers:
+            In accordance with rigorous academic integrity standards, the detection and forensic capabilities of Verivox AI are bounded by several technical constraints inherent to state-of-the-art media classifiers:
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs leading-relaxed text-[#171719]/80">
@@ -1037,7 +1038,7 @@ export default function AboutProjectPage() {
 
         <div className="space-y-3 text-sm text-[#F8F7F4]/80 leading-relaxed max-w-4xl">
           <p>
-            <strong>VoiceGuard AI is an educational prototype and does not guarantee detection of synthetic audio or video.</strong>
+            <strong>Verivox AI is an educational prototype and does not guarantee detection of synthetic audio or video.</strong>
           </p>
           <p className="text-xs text-[#F8F7F4]/65">
             Automated machine learning classifications, confidence scores, and heuristic evaluations are probabilistic approximations intended solely for academic research, educational demonstrations, and triage guidance. They do not constitute legally binding forensic certifications. Users must always verify critical or emergency communications through independent out-of-band channels before initiating financial transfers or sharing sensitive personal data.

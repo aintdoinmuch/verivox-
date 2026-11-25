@@ -1,5 +1,5 @@
 """
-VoiceGuard AI — Multimodal Dual-Engine Video Deepfake & Generative AI Detector
+Verivox AI — Multimodal Dual-Engine Video Deepfake & Generative AI Detector
 Ensemble Architecture:
 1. Model A: dima806/deepfake_vs_real_image_detection (ViT-Base Facial Manipulation Specialist)
    - Evaluated on FaceForensics++, DFDC, Celeb-DF (76k+ facial crops)

@@ -27,7 +27,7 @@ async function checkRoute(route) {
     console.log(`[HTTP ${res.status}] ${route.name} (${route.path})`);
     console.log(`  - H1 count: ${h1Matches.length} => "${firstH1.slice(0, 60)}..."`);
     console.log(`  - H2 count: ${h2Matches.length}, H3 count: ${h3Matches.length}`);
-    console.log(`  - Has VoiceGuard branding: ${html.includes("VoiceGuard")}`);
+    console.log(`  - Has Verivox branding: ${html.includes("Verivox")}`);
     console.log(`  - Has Soft Ivory (#F8F7F4): ${html.includes("#F8F7F4") || html.includes("bg-[#F8F7F4]")}`);
     return { ok: res.ok, h1Count: h1Matches.length };
   } catch (err) {
