@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Space_Grotesk, Inter } from "next/font/google";
 import "./globals.css";
 import { PROJECT_INFO } from "@/lib/constants";
@@ -40,6 +41,17 @@ export default function RootLayout({
         <Navbar />
         <div className="flex-1 flex flex-col">{children}</div>
         <Footer />
+
+        {/* Botpress Chatbot Integration */}
+        <Script
+          src="https://cdn.botpress.cloud/webchat/v5.0/inject.js"
+          strategy="afterInteractive"
+        />
+
+        <Script
+          src="https://files.bpcontent.cloud/2026/11/24/11/20261124110236-5YNSVRCA.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
